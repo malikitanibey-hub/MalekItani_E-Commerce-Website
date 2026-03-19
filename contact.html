@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="Images/Screenshot_2026-03-11_191651-removebg-preview.png"
+    />
+    <title>Contact | Home & Style</title>
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <div class="logo">
+        <img
+          src="Images/Home&Style.png"
+          alt="Home & Style Logo"
+          class="footer-logo"
+        />
+        <span
+          id="welcomeUser"
+          style="display: none; margin-left: 10px; font-weight: 500"
+        ></span>
+      </div>
+      <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          const user = JSON.parse(localStorage.getItem("loggedInUser"));
+          const welcomeSpan = document.getElementById("welcomeUser");
+          const loginLink = document.querySelector('nav a[href="login.html"]');
+
+          if (user) {
+            if (welcomeSpan) {
+              welcomeSpan.innerText = `Welcome, ${user.name}`;
+              welcomeSpan.style.display = "inline";
+            }
+
+            if (loginLink) {
+              loginLink.innerText = "Logout";
+              loginLink.href = "#"; 
+              loginLink.addEventListener("click", () => {
+                localStorage.removeItem("loggedInUser");
+                location.reload();
+              });
+            }
+          }
+        });
+      </script>
+
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+      <div class="menu-btn" id="menu-btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+      <h1 class="contact-title">Contact Us</h1>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+
+          <p><i class="fa fa-envelope"></i> malikitani.bey@gmail.com</p>
+          <p><i class="fa fa-phone"></i> +961 81 980 820</p>
+          <p><i class="fa fa-location-dot"></i> Beirut, Lebanon</p>
+
+          <p>
+            Have questions about our products? Feel free to contact us anytime.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/m_itanii/?hl=en" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/malek-itani-0888023a7"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Your Name" required />
+
+            <input type="email" placeholder="Your Email" required />
+
+            <input type="text" placeholder="Subject" />
+
+            <textarea placeholder="Your Message" rows="5"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <img src="images/Home&Style.png" class="footer-logo" />
+          <p>
+            Discover premium furniture and modern home decor. Quality, comfort,
+            and style — all in one place.
+          </p>
+
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Account</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Customer Support</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-envelope"></i> malikitani.bey@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +961 81 980 820</p>
+          <p><i class="fa-solid fa-location-dot"></i> Beirut, Lebanon</p>
+
+          <div class="social-icons">
+            <a href="https://www.instagram.com/m_itanii/?hl=en" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/malek-itani-0888023a7"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Home & Style. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="Script/script.js"></script>
+  </body>
+</html>

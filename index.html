@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="Images/Screenshot_2026-03-11_191651-removebg-preview.png"
+    />
+    <title>Home & Style</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header>
+      <div class="logo">
+        <img
+          src="Images/Home&Style.png"
+          alt="Home & Style Logo"
+          class="footer-logo"
+        />
+        <span
+          id="welcomeUser"
+          style="display: none; margin-left: 10px; font-weight: 500"
+        ></span>
+      </div>
+
+      <nav id="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+      </nav>
+
+      <div class="menu-btn" id="menu-btn">
+        <i class="fa fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- SLIDESHOW -->
+
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="Images/slideshow/livingroom.avif" alt="Stylish Living Room" />
+        <div class="slide-text">
+          <h2>Stylish Living Room Sets</h2>
+          <p>Comfort & design for modern homes</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img
+          src="Images/slideshow/kitchen-coffee.jpg"
+          alt="Coffee Maker & Appliances"
+        />
+        <div class="slide-text">
+          <h2>Smart Kitchen Essentials</h2>
+          <p>Cook smarter with premium tools</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img
+          src="Images/slideshow/kitchen-gadgets.webp"
+          alt="Kitchen Gadgets"
+        />
+        <div class="slide-text">
+          <h2>Top Kitchen Gadgets</h2>
+          <p>Tools that make cooking easier</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img src="Images/slideshow/home-decor.jpg" alt="Cozy Decor" />
+        <div class="slide-text">
+          <h2>Cozy Home Decor Deals</h2>
+          <p>Add warmth & comfort to every room</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img
+          src="Images/slideshow/minimalist-room.jpg"
+          alt="Minimalist Living Room"
+        />
+        <div class="slide-text">
+          <h2>Minimalist Home Style</h2>
+          <p>Elegant simplicity for modern spaces</p>
+        </div>
+      </div>
+
+      <div class="slide fade">
+        <img src="Images/slideshow/modern-lighting.jpg" alt="Modern Lighting" />
+        <div class="slide-text">
+          <h2>Modern Lighting & Decor</h2>
+          <p>Stylish fixtures to brighten every room</p>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!-- Dots -->
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <!-- ABOUT -->
+
+    <section class="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About Home & Style</h2>
+          <p>
+            Home & Style is your one-stop online store for stylish and
+            functional home essentials. Discover furniture, lighting, kitchen
+            tools, decor, and more, curated for modern living. Our mission is to
+            help you create a home that is both beautiful and comfortable.
+          </p>
+          <p>
+            With easy navigation, secure checkout, and high-quality products,
+            Home & Style makes online shopping for your home effortless and
+            enjoyable.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="Images/slideshow/home-decor.jpg"
+            alt="Beautiful Home Setup"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST PRODUCTS -->
+
+    <section class="latest-products">
+      <h2>Latest Home & Style Products</h2>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="badge">-15%</div>
+          <img
+            src="Images/Vesna+L-shape+81_+Wide+Space-Saving+Sleeper+Sofa+Upholstered+Pull-out+Sofa+Bed-95208153.webp"
+            alt="Modern Table"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              onclick="
+                goToProduct(
+                  'Vesna L-shape 81 Wide Space-Saving Sleeper Sofa Upholstered Pull-out Sofa Bed',
+                )
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>
+            Vesna L-shape 81 Wide Space-Saving Sleeper Sofa Upholstered Pull-out
+            Sofa Bed
+          </h3>
+          <p><span class="old-price">$550</span> $509</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">-11%</div>
+          <img
+            src="Images/Sandrea+4-Door+Armoire+with+Mirror+and+6+Drawers-682798570.webp"
+            alt="Comfortable Sofa"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              onclick="
+                goToProduct('Sandrea 4-Door Armoire with Mirror and 6 Drawers')
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>Sandrea 4-Door Armoire with Mirror and 6 Drawers</h3>
+          <p><span class="old-price">$460</span> $410</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">-10%</div>
+          <img
+            src="Images/25_+Louann+Table+Lamp+Set+With+Night+Light+And+USB+Ports.webp"
+            alt="Decorative Lamp"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              onclick="
+                goToProduct(
+                  'Louann Table Lamp Set With Night Light And USB Ports',
+                )
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>Louann Table Lamp Set With Night Light And USB Ports</h3>
+          <p><span class="old-price">$121.99</span> $100</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">-10%</div>
+          <img
+            src="Images/Pamplona+26_+W+Modern+Stylish+Soft+and+Breathable+Upholstered+Barrel+Chair+and+Ottoman-1349253307.webp"
+            alt="Kitchen Tools"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              onclick="
+                goToProduct(
+                  'Pamplona 26 W Modern Stylish Soft and Breathable Upholstered Barrel Chair and Ottoman',
+                )
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>
+            Pamplona 26 W Modern Stylish Soft and Breathable Upholstered Barrel
+            Chair and Ottoman
+          </h3>
+          <p><span class="old-price">$114</span> $96</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">-15%</div>
+          <img
+            src="Images/Antioch+Queen+Bed+Frame+with+2+Underbed+Drawers,+Modern+Platform+Bed+with+Charging+Station+&+LED+Light,+Storage+Headboard+with++2+Bedside+Drawers+&+Open+Bookcase+Shelves,+R.webp"
+            alt="Modern Wardrobe"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              onclick="
+                goToProduct(
+                  'Antioch Queen Bed Frame with 2 Underbed Drawers, Modern Platform Bed with Charging Station & LED Light, Storage Headboard with 2 Bedside Drawers & Open Bookcase Shelves, Rustic Brown',
+                )
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>
+            Antioch Queen Bed Frame with 2 Underbed Drawers, Modern Platform Bed
+            with Charging Station & LED Light, Storage Headboard with 2 Bedside
+            Drawers & Open Bookcase Shelves, Rustic Brown
+          </h3>
+          <p><span class="old-price">$270</span> $230</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">-20%</div>
+          <img
+            src="Images/Samsung+Family+Hub+Side-by-Side+Refrigerator+with+Touch+Screen-49425573.webp"
+            alt="Stylish Chair"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              onclick="
+                goToProduct(
+                  'Samsung Family Hub Side-by-Side Refrigerator with Touch Screen RS27T5561SR/AA',
+                )
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>
+            Samsung Family Hub Side-by-Side Refrigerator with Touch Screen
+            RS27T5561SR/AA
+          </h3>
+          <p><span class="old-price">$1500</span> $1372</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">-15%</div>
+          <img
+            src="Images/30_+4.8+cu.ft.+Freestanding+Gas+Range-50219102.webp"
+            alt="Modern Wardrobe"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              onclick="
+                goToProduct('30 4.8 cu.ft. Freestanding Gas Range JGBS61RPSS')
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>30 4.8 cu.ft. Freestanding Gas Range JGBS61RPSS</h3>
+          <p><span class="old-price">$720</span> $659</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="badge">-11%</div>
+          <img
+            src="images/Heavy+Duty+4-Tier+Steel+Shelves+-+Adjustable+Storage+Rack+For+Garage,+Warehouse,+Pantry+&+Toolsheds-1450413742.webp"
+            alt="Stylish Chair"
+          />
+          <div class="overlay">
+            <button
+              class="quick-view"
+              class="quick-view"
+              onclick="
+                goToProduct(
+                  'Heavy Duty 4-Tier Steel Shelves - Adjustable Storage Rack For Garage, Warehouse, Pantry & Toolsheds',
+                )
+              "
+            >
+              Quick View
+            </button>
+          </div>
+          <h3>
+            Heavy Duty 4-Tier Steel Shelves - Adjustable Storage Rack For
+            Garage, Warehouse, Pantry & Toolsheds
+          </h3>
+          <p><span class="old-price">$190</span> $169</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <button><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-box">
+          <img src="images/Home&Style.png" class="footer-logo" />
+          <p>
+            Discover premium furniture and modern home decor. Quality, comfort,
+            and style — all in one place.
+          </p>
+
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Account</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Customer Support</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-envelope"></i> malikitani.bey@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +961 81 980 820</p>
+          <p><i class="fa-solid fa-location-dot"></i> Beirut, Lebanon</p>
+
+          <div class="social-icons">
+            <a href="https://www.instagram.com/m_itanii/?hl=en" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/malek-itani-0888023a7"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Home & Style. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Toast Notification -->
+
+    <div id="toast"></div>
+
+    <script src="Script/script.js"></script>
+  </body>
+</html>
